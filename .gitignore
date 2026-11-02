@@ -1,0 +1,13 @@
+# Not part of the published project
+deliverables/
+scanned padv a2/
+final/
+Dashboard_Viva_Notes.txt
+dataset explaination.txt
+
+# Python / OS
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+~$*
+_build/build_final.py

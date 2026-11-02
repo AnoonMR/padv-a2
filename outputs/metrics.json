@@ -1,0 +1,330 @@
+{
+  "rows_raw": 517,
+  "rows_clean": 513,
+  "duplicates_removed": 4,
+  "fires": 269,
+  "fire_rate": 52.4,
+  "total_area": 6613.4,
+  "max_area": 1090.8,
+  "median_fire_area": 6.36,
+  "share_table": [
+    {
+      "grp": "August",
+      "% of observations": 35.5,
+      "% of burned area": 34.7
+    },
+    {
+      "grp": "September",
+      "% of observations": 33.5,
+      "% of burned area": 46.7
+    },
+    {
+      "grp": "March",
+      "% of observations": 10.3,
+      "% of burned area": 3.1
+    },
+    {
+      "grp": "July",
+      "% of observations": 6.2,
+      "% of burned area": 7.0
+    },
+    {
+      "grp": "Other 8 months",
+      "% of observations": 14.4,
+      "% of burned area": 8.5
+    }
+  ],
+  "top10_share": 50.6,
+  "n_fires_for_80": 50,
+  "pct_fires_for_80": 18.6,
+  "pca_evr": [
+    35.6,
+    16.3,
+    15.3
+  ],
+  "cv_auc": {
+    "Baseline (always majority)": [
+      0.5,
+      0.0
+    ],
+    "Logistic Regression": [
+      0.536,
+      0.047
+    ],
+    "Decision Tree (depth 4)": [
+      0.561,
+      0.045
+    ],
+    "Random Forest (300 trees)": [
+      0.602,
+      0.044
+    ]
+  },
+  "oof_auc": 0.592,
+  "holdout_auc": 0.676,
+  "holdout_report": {
+    "No fire": {
+      "precision": 0.6792452830188679,
+      "recall": 0.5901639344262295,
+      "f1-score": 0.631578947368421,
+      "support": 61.0
+    },
+    "Fire": {
+      "precision": 0.6710526315789473,
+      "recall": 0.75,
+      "f1-score": 0.7083333333333334,
+      "support": 68.0
+    },
+    "accuracy": 0.6744186046511628,
+    "macro avg": {
+      "precision": 0.6751489572989076,
+      "recall": 0.6700819672131147,
+      "f1-score": 0.6699561403508771,
+      "support": 129.0
+    },
+    "weighted avg": {
+      "precision": 0.6749266760582896,
+      "recall": 0.6744186046511628,
+      "f1-score": 0.6720386236910105,
+      "support": 129.0
+    }
+  },
+  "confusion": [
+    [
+      36,
+      25
+    ],
+    [
+      17,
+      51
+    ]
+  ],
+  "tiers": [
+    {
+      "risk_tier": "Low",
+      "n": 171,
+      "fire_rate": 42.1,
+      "large_rate": 18.1,
+      "burned_ha": 1850.9
+    },
+    {
+      "risk_tier": "Moderate",
+      "n": 171,
+      "fire_rate": 55.6,
+      "large_rate": 18.7,
+      "burned_ha": 3387.8
+    },
+    {
+      "risk_tier": "High",
+      "n": 171,
+      "fire_rate": 59.6,
+      "large_rate": 18.1,
+      "burned_ha": 1374.7
+    }
+  ],
+  "importance": {
+    "DMC": 0.0463,
+    "temp": 0.0366,
+    "RH": 0.0304,
+    "X": 0.0158,
+    "Y": 0.0134,
+    "month_num": 0.0092,
+    "DC": 0.0086,
+    "ISI": 0.0058,
+    "wind": -0.0017,
+    "rain": -0.002,
+    "day_num": -0.0142,
+    "FFMC": -0.0158
+  },
+  "hot_dry": {
+    "n": 87,
+    "fire_rate": 58.6,
+    "large_rate": 21.8,
+    "mean_area": 30.4
+  },
+  "rest": {
+    "n": 426,
+    "fire_rate": 51.2,
+    "large_rate": 17.6,
+    "mean_area": 9.3
+  },
+  "season_props": {
+    "Winter": {
+      "No fire": 38.7,
+      "Small (<1 ha)": 0.0,
+      "Medium (1-10 ha)": 35.5,
+      "Large (>10 ha)": 25.8
+    },
+    "Spring": {
+      "No fire": 64.1,
+      "Small (<1 ha)": 1.6,
+      "Medium (1-10 ha)": 20.3,
+      "Large (>10 ha)": 14.1
+    },
+    "Summer": {
+      "No fire": 45.7,
+      "Small (<1 ha)": 8.3,
+      "Medium (1-10 ha)": 30.9,
+      "Large (>10 ha)": 15.2
+    },
+    "Autumn": {
+      "No fire": 45.7,
+      "Small (<1 ha)": 3.7,
+      "Medium (1-10 ha)": 28.2,
+      "Large (>10 ha)": 22.3
+    }
+  },
+  "ffmc_dry_share": 79.3,
+  "top_cells": [
+    {
+      "X": 6,
+      "Y": 5,
+      "obs": 49,
+      "fires": 32,
+      "burned_ha": 1384.0499999999997
+    },
+    {
+      "X": 8,
+      "Y": 6,
+      "obs": 52,
+      "fires": 29,
+      "burned_ha": 1265.3
+    },
+    {
+      "X": 7,
+      "Y": 4,
+      "obs": 45,
+      "fires": 25,
+      "burned_ha": 474.37
+    },
+    {
+      "X": 2,
+      "Y": 2,
+      "obs": 25,
+      "fires": 11,
+      "burned_ha": 462.65
+    },
+    {
+      "X": 4,
+      "Y": 4,
+      "obs": 35,
+      "fires": 19,
+      "burned_ha": 368.77
+    },
+    {
+      "X": 4,
+      "Y": 5,
+      "obs": 25,
+      "fires": 10,
+      "burned_ha": 287.01
+    }
+  ],
+  "corr_with_log_area": {
+    "FFMC": 0.047,
+    "DMC": 0.072,
+    "DC": 0.072,
+    "ISI": -0.009,
+    "temp": 0.055,
+    "RH": -0.052,
+    "wind": 0.068,
+    "rain": 0.023
+  },
+  "monthly": [
+    {
+      "month_num": 1,
+      "n": 2,
+      "temp": 5.2,
+      "RH": 89.0,
+      "DC": 90.4,
+      "fire_rate": 0.0
+    },
+    {
+      "month_num": 2,
+      "n": 20,
+      "temp": 8.8,
+      "RH": 52.0,
+      "DC": 43.0,
+      "fire_rate": 50.0
+    },
+    {
+      "month_num": 3,
+      "n": 53,
+      "temp": 13.3,
+      "RH": 38.0,
+      "DC": 80.8,
+      "fire_rate": 34.0
+    },
+    {
+      "month_num": 4,
+      "n": 9,
+      "temp": 13.4,
+      "RH": 51.0,
+      "DC": 43.5,
+      "fire_rate": 44.4
+    },
+    {
+      "month_num": 5,
+      "n": 2,
+      "temp": 14.6,
+      "RH": 67.0,
+      "DC": 93.8,
+      "fire_rate": 50.0
+    },
+    {
+      "month_num": 6,
+      "n": 16,
+      "temp": 20.8,
+      "RH": 41.5,
+      "DC": 297.7,
+      "fire_rate": 50.0
+    },
+    {
+      "month_num": 7,
+      "n": 32,
+      "temp": 23.2,
+      "RH": 40.0,
+      "DC": 441.5,
+      "fire_rate": 56.2
+    },
+    {
+      "month_num": 8,
+      "n": 182,
+      "temp": 21.3,
+      "RH": 42.0,
+      "DC": 647.1,
+      "fire_rate": 54.4
+    },
+    {
+      "month_num": 9,
+      "n": 172,
+      "temp": 19.6,
+      "RH": 40.0,
+      "DC": 728.6,
+      "fire_rate": 56.4
+    },
+    {
+      "month_num": 10,
+      "n": 15,
+      "temp": 16.8,
+      "RH": 35.0,
+      "DC": 686.9,
+      "fire_rate": 33.3
+    },
+    {
+      "month_num": 11,
+      "n": 1,
+      "temp": 11.8,
+      "RH": 31.0,
+      "DC": 106.7,
+      "fire_rate": 0.0
+    },
+    {
+      "month_num": 12,
+      "n": 9,
+      "temp": 4.6,
+      "RH": 24.0,
+      "DC": 349.7,
+      "fire_rate": 100.0
+    }
+  ]
+}

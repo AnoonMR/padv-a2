@@ -1,0 +1,35 @@
+:root {
+  --page: #f9f9f7; --surface: #ffffff; --ink: #0b0b0b; --ink2: #52514e; --muted: #898781;
+  --border: rgba(11, 11, 11, 0.10); --orange: #eb6834; --blue: #2a78d6;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--page); color: var(--ink); font-family: "Segoe UI", system-ui, -apple-system, sans-serif; }
+.page { max-width: 1400px; margin: 0 auto; padding: 24px 16px 40px; }
+header h1 { font-size: 26px; margin: 0 0 4px; }
+header .sub { color: var(--ink2); margin: 0 0 18px; }
+.filters { display: flex; flex-wrap: wrap; gap: 28px; align-items: flex-end; background: var(--surface);
+  border: 1px solid var(--border); border-radius: 10px; padding: 14px 18px; margin-bottom: 16px; }
+.filters .grow { flex: 1; min-width: 320px; }
+.ctl-label { display: block; font-size: 12px; font-weight: 600; color: var(--ink2); margin-bottom: 6px; text-transform: uppercase; letter-spacing: .04em; }
+.chk label { margin-right: 14px; font-size: 14px; }
+.chk input { margin-right: 5px; accent-color: var(--orange); }
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 16px; }
+.kpi { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+.kpi-label { font-size: 12px; color: var(--ink2); text-transform: uppercase; letter-spacing: .04em; }
+.kpi-value { font-size: 28px; font-weight: 700; margin-top: 4px; }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 6px; min-width: 0; }
+.card.wide { grid-column: 1 / -1; }
+.predictor { padding: 16px 20px; }
+.predictor h3 { margin: 4px 0 4px; font-size: 16px; }
+.note { color: var(--ink2); font-size: 13px; margin: 4px 0 12px; }
+.pred-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 22px; }
+.ctl { margin-bottom: 8px; }
+.pred-out { margin-top: 10px; border-top: 1px solid var(--border); padding-top: 12px; }
+.tier { display: inline-block; font-weight: 700; font-size: 18px; padding: 4px 12px; border-radius: 6px; margin-right: 12px; }
+.tier-low { background: #fbe6d8; color: #7a2a0e; }
+.tier-moderate { background: #f0915c; color: #0b0b0b; }
+.tier-high { background: #7a2a0e; color: #ffffff; }
+.score { color: var(--ink2); font-size: 14px; }
+footer { margin-top: 24px; color: var(--muted); font-size: 12px; }
+@media (max-width: 900px) { .grid, .pred-grid { grid-template-columns: 1fr; } }
